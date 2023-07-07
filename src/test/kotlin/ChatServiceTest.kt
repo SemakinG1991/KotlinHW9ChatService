@@ -10,6 +10,8 @@ class ChatServiceTest {
 
     @org.junit.Test
     fun addMessage() {
-
+        ChatService.addMessage(1, Message(1, "Text"))
+        val x = ChatService.getChatsId().isEmpty()
+        assertFalse(x)
     }
 }
